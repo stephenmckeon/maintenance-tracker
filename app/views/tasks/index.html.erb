@@ -4,3 +4,7 @@
     New Task
   </a>
 </div>
+
+<% @tasks.each do |task| %>
+  <p><%= task.name %><p>
+<% end %>
