@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   def index
-    @tasks = Task.all
+    @categories = Category.includes(:tasks).all
   end
 
   def new
