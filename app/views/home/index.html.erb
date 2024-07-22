@@ -6,3 +6,9 @@
     Categories
   </a>
 </div>
+
+<% @due_tasks.each do |task| %>
+  <div>
+    <%= task.name %>
+  </div>
+<% end %>

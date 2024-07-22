@@ -104,6 +104,8 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.0)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     foreman (0.88.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -309,6 +311,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faker
   foreman
   importmap-rails
   jbuilder
