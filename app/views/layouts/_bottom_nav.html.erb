@@ -1,0 +1,22 @@
+<div class="fixed inset-x-0 bottom-0 bg-zinc-900 rounded-t-3xl">
+  <div class="flex justify-around">
+    <a href="<%= root_path %>" class="flex flex-col text-center gap-1 py-2">
+      <i class="fa-solid fa-house fa-2xl nav-icon text-gray-500"></i>
+      <span class="text-xs text-gray-500">Home</span>
+    </a>
+    <a href="<%= tasks_path %>" class="flex flex-col text-center gap-1 py-2">
+      <i class="fa-regular fa-rectangle-list fa-2xl nav-icon text-gray-500"></i>
+      <span class="text-xs text-gray-500">Tasks</span>
+    </a>
+    <a href="<%= categories_path %>" class="flex flex-col text-center gap-1 py-2">
+      <i class="fa-solid fa-layer-group fa-2xl nav-icon text-gray-500"></i>
+      <span class="text-xs text-gray-500">Categories</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .nav-icon {
+    line-height: 1;
+  }
+</style>
