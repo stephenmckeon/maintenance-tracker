@@ -7,4 +7,8 @@ class Task < ApplicationRecord
   def last_completed_at
     completions.order(:created_at).last&.created_at
   end
+
+  def complete(note = "")
+    completions.create(note:)
+  end
 end

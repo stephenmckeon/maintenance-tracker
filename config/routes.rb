@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   root "home#index"
 
-  resources :tasks
+  resources :tasks do
+    post :complete, on: :member
+  end
   resources :categories
 end

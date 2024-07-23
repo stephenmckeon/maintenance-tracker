@@ -18,6 +18,13 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def complete
+    task = Task.find(params[:id])
+    task.complete(note_params)
+
+    redirect_to root_path
+  end
+
   private
 
   def category
@@ -26,5 +33,9 @@ class TasksController < ApplicationController
 
   def task_params
     params.require(:task).permit(:name, :description, :interval, :category)
+  end
+
+  def note_params
+    params.require(:note)
   end
 end
