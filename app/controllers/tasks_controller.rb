@@ -3,6 +3,10 @@ class TasksController < ApplicationController
     @categories = Category.includes(:tasks).all
   end
 
+  def show
+    @task = Task.find(params[:id])
+  end
+
   def new
     @categories = Category.all
   end
